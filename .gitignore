@@ -1,0 +1,9 @@
+# Build artifacts
+*.plugin
+
+# macOS
+.DS_Store
+
+# Editor
+.vscode/
+.idea/

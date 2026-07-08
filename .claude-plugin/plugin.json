@@ -1,0 +1,9 @@
+{
+  "name": "bmad-method",
+  "version": "0.1.0",
+  "description": "BMad Method — a structured, AI-assisted framework for designing and developing software products. Six specialist agents guide you from initial discovery through architecture and into a dev-ready backlog.",
+  "author": {
+    "name": "BMad Method (adapted for Claude)"
+  },
+  "keywords": ["bmad", "product-management", "architecture", "agile", "ux", "ai-development"]
+}

@@ -1,0 +1,56 @@
+name: bmad-method
+version: 1.0.0
+description: >
+  BMad Method — a structured, AI-assisted framework for designing and developing
+  software products. Six specialist agents guide you from initial discovery
+  through architecture and into a dev-ready backlog.
+icon: 🧠
+author: BMad Method (adapted for Claude)
+
+skills:
+  - skills/bmad-orchestrator
+  - skills/analyst
+  - skills/pm
+  - skills/ux-expert
+  - skills/architect
+  - skills/po
+
+agents:
+  - id: bmad-orchestrator
+    name: BMad Orchestrator
+    description: Entry point — coordinates all agents and workflows
+  - id: analyst
+    name: Mary (Business Analyst)
+    description: Market research, brainstorming, project briefs
+  - id: pm
+    name: John (Product Manager)
+    description: PRDs, epics, feature prioritization, roadmaps
+  - id: ux-expert
+    name: Sally (UX Expert)
+    description: Front-end specs, UX design, AI UI prompts
+  - id: architect
+    name: Winston (Architect)
+    description: System design, tech stack, architecture documents
+  - id: po
+    name: Sarah (Product Owner)
+    description: Story refinement, backlog management, sprint planning
+
+workflow:
+  typical_greenfield:
+    - step: 1
+      agent: analyst
+      output: Project Brief / Market Research
+    - step: 2
+      agent: pm
+      output: PRD (Product Requirements Document)
+    - step: 3
+      agent: ux-expert
+      output: Front-End Spec (optional)
+    - step: 4
+      agent: architect
+      output: Architecture Document
+    - step: 5
+      agent: po
+      output: Refined Backlog & User Stories
+    - step: 6
+      note: Hand off stories to development team or AI coding agent
