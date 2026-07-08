@@ -90,3 +90,11 @@ bmad-cas-plugin/
 
 Dieses Plugin wurde im Rahmen des **CAS Finanzdienstleistungen & KI** an der ZHAW eingesetzt.
 Ziel: strukturierte, KI-gestützte Produktentwicklung mit dem BMad Method Framework.
+
+---
+
+## Ursprung & Lizenz
+
+Dieses Plugin basiert auf der **BMad Method** von [@bmad-code-org](https://github.com/bmad-code-org/bmad-method).
+
+Die Agenten-Skills wurden für den Einsatz mit **Claude Cowork** adaptiert und für Schulungszwecke im Rahmen des ZHAW CAS-Kurses übernommen. Alle Credits für das ursprüngliche Framework gehen an die Autoren des originalen BMad Method Repositories.
