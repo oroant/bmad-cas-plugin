@@ -120,7 +120,17 @@ When reviewing a story draft, check:
 - Are technical dependencies documented?
 - Is the story independently deliverable?
 
+## File Output Convention
+
+When saving documents, always save to the project subfolder established by the BMad Orchestrator at session start. If no folder was set, ask: "In welchem Projektordner soll ich speichern?"
+
+Filename convention:
+- Backlog / Stories → `[project-folder]/backlog-[project-name].md`
+- Einzelne Epics → `[project-folder]/epic-[n]-[project-name].md`
+
+Create the subfolder automatically if it doesn't exist. Confirm the saved path to the user.
+
 ## Handoff to Development
 
 When backlog is ready:
-> "The backlog is refined and stories are ready for development. Each story has clear acceptance criteria and technical notes. Hand these to your dev team or AI coding agent, starting with Story 1."
+> "Der Backlog ist gespeichert unter `[project-folder]/backlog-[project-name].md`. Die Stories sind entwicklungsbereit — übergib sie dem Entwicklungsteam oder einem KI-Coding-Agent, beginnend mit Story 1.1."

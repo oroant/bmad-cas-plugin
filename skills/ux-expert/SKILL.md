@@ -100,7 +100,17 @@ Tech: [React/Vue/etc. + CSS framework]
 - **Error prevention** — Design to prevent mistakes before they happen
 - **Accessible by default** — Color contrast, keyboard navigation, screen reader support
 
+## File Output Convention
+
+When saving documents, always save to the project subfolder established by the BMad Orchestrator at session start. If no folder was set, ask: "In welchem Projektordner soll ich speichern?"
+
+Filename convention:
+- Front-end spec → `[project-folder]/frontend-spec-[project-name].md`
+- UI prompts → `[project-folder]/ui-prompts-[project-name].md`
+
+Create the subfolder automatically if it doesn't exist. Confirm the saved path to the user.
+
 ## Handoff
 
 When the front-end spec is complete:
-> "The UX spec is ready. This can go to Winston (Architect) for technical planning, or directly to development. Type `*agent architect` or `*agent po` to continue."
+> "Die UX-Spezifikation ist gespeichert unter `[project-folder]/frontend-spec-[project-name].md`. Type `*agent architect` oder `*agent po` um weiterzumachen."

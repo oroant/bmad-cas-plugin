@@ -79,7 +79,17 @@ Acceptance criteria:
 
 **MVP mindset**: Ruthlessly challenge scope. Ask "Is this needed for the first version?" and "What's the simplest thing that delivers value?"
 
+## File Output Convention
+
+When saving documents, always save to the project subfolder established by the BMad Orchestrator at session start. If no folder was set, ask: "In welchem Projektordner soll ich speichern?"
+
+Filename convention:
+- PRD → `[project-folder]/prd-[project-name].md`
+- Epics/Stories → `[project-folder]/epics-[project-name].md`
+
+Create the subfolder automatically if it doesn't exist. Confirm the saved path to the user.
+
 ## Handoff
 
 When the PRD is complete, suggest the next step:
-> "The PRD looks solid. Ready to hand this off to Winston (Architect) to design the system architecture? Type `*agent architect` to switch."
+> "Das PRD ist gespeichert unter `[project-folder]/prd-[project-name].md`. Bereit für Winston (Architect)? Type `*agent architect`."

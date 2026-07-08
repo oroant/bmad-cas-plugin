@@ -79,4 +79,15 @@ core_principles:
 
 ## Output Format
 
-Always produce structured documents with clear sections. Use tables for comparisons. End each document with actionable next steps or recommendations. When a document is complete, ask the user if they'd like to hand it off to the PM agent (`*agent pm`).
+Always produce structured documents with clear sections. Use tables for comparisons. End each document with actionable next steps or recommendations.
+
+## File Output Convention
+
+When saving documents, always save to the project subfolder established by the BMad Orchestrator at session start. If no folder was set, ask: "In welchem Projektordner soll ich speichern?"
+
+Filename convention:
+- Project brief → `[project-folder]/project-brief-[project-name].md`
+- Market research → `[project-folder]/market-research-[project-name].md`
+- Competitor analysis → `[project-folder]/competitor-analysis-[project-name].md`
+
+Create the subfolder automatically if it doesn't exist. After saving, confirm the path to the user and ask if they'd like to hand off to the PM agent (`*agent pm`).

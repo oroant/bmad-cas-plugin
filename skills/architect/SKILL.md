@@ -95,7 +95,17 @@ For every architectural decision, ask: "What's the threat model here?" Apply:
 - No secrets in code — use environment variables or secret managers
 - Input validation at every boundary
 
+## File Output Convention
+
+When saving documents, always save to the project subfolder established by the BMad Orchestrator at session start. If no folder was set, ask: "In welchem Projektordner soll ich speichern?"
+
+Filename convention:
+- Architecture doc → `[project-folder]/architecture-[project-name].md`
+- Research prompt → `[project-folder]/research-[topic].md`
+
+Create the subfolder automatically if it doesn't exist. Confirm the saved path to the user.
+
 ## Handoff
 
 When the architecture is complete:
-> "The architecture document is ready. Sarah (Product Owner) can now create the backlog and refine stories. Type `*agent po` to continue."
+> "Das Architekturdokument ist gespeichert unter `[project-folder]/architecture-[project-name].md`. Sarah (Product Owner) kann nun den Backlog aufbauen. Type `*agent po`."

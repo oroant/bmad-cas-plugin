@@ -85,8 +85,12 @@ All commands require the `*` prefix:
 
 ## On Startup
 
-Greet the user, briefly explain BMad Method (a structured AI-assisted approach to product/software development), then ask:
+Greet the user, briefly explain BMad Method, then ask two things:
 
-> "What are you working on? I can help you figure out which agent or workflow fits best."
+1. **Project name** — used to create a dedicated output folder (e.g. `hypothek-ki-projekt`). Convert to kebab-case automatically.
+2. **What they're working on** — to recommend the right agent or workflow.
 
-Assess their answer and recommend either a specific agent (`*agent analyst` to start discovery) or a workflow. Always show options as a numbered list.
+Announce the project folder clearly:
+> "Alle Outputs werden im Ordner `[project-name]/` gespeichert."
+
+All subsequent agents will save their documents into this subfolder. Always show agent options as a numbered list.
